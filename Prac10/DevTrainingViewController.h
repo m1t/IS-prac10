@@ -10,7 +10,7 @@
 
 @interface DevTrainingViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *heightTextField;
-@property (weak, nonatomic) IBOutlet UITextField *WeightTextField;
+@property (weak, nonatomic) IBOutlet UITextField *weightTextField;
 @property (weak, nonatomic) IBOutlet UILabel *bmiLabel;
 - (IBAction)calcAction:(id)sender;
 

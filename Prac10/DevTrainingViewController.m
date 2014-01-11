@@ -7,6 +7,7 @@
 //
 
 #import "DevTrainingViewController.h"
+#import "MyBMICalc.h"
 
 @interface DevTrainingViewController ()
 
@@ -28,10 +29,11 @@
 
 - (IBAction)calcAction:(id)sender {
     
-    float w = [_WeightTextField.text floatValue];
-    float h = [_heightTextField.text floatValue] / 100;
+    float w = [_weightTextField.text floatValue];
+    float h = [_heightTextField.text floatValue];
     if (h == 0) return;
-    float bmi = 0.0f;
+    MyBMICalc *myBMICalc = [[MyBMICalc alloc] init];
+    float bmi = [myBMICalc BMIwithWeight:w Height:h];
     _bmiLabel.text = [NSString stringWithFormat:@"%.1f", bmi];
     // Numberパッドを消す
     [self.view endEditing:YES];

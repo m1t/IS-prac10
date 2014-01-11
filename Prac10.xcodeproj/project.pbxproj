@@ -24,6 +24,7 @@
 		215CAF5D1880F24700C1CC80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215CAF351880F24600C1CC80 /* Foundation.framework */; };
 		215CAF651880F24700C1CC80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 215CAF631880F24700C1CC80 /* InfoPlist.strings */; };
 		215CAF681880F24700C1CC80 /* Prac10Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 215CAF671880F24700C1CC80 /* Prac10Tests.m */; };
+		83D9BB2C1881023F00C9E251 /* MyBMICalc.m in Sources */ = {isa = PBXBuildFile; fileRef = 83D9BB2B1881023F00C9E251 /* MyBMICalc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		215CAF641880F24700C1CC80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		215CAF661880F24700C1CC80 /* Prac10Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prac10Tests.h; sourceTree = "<group>"; };
 		215CAF671880F24700C1CC80 /* Prac10Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prac10Tests.m; sourceTree = "<group>"; };
+		83D9BB2A1881023F00C9E251 /* MyBMICalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBMICalc.h; sourceTree = "<group>"; };
+		83D9BB2B1881023F00C9E251 /* MyBMICalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBMICalc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				215CAF421880F24600C1CC80 /* DevTrainingAppDelegate.h */,
 				215CAF431880F24600C1CC80 /* DevTrainingAppDelegate.m */,
 				215CAF4B1880F24600C1CC80 /* MainStoryboard_iPhone.storyboard */,
+				83D9BB2A1881023F00C9E251 /* MyBMICalc.h */,
+				83D9BB2B1881023F00C9E251 /* MyBMICalc.m */,
 				215CAF4E1880F24600C1CC80 /* MainStoryboard_iPad.storyboard */,
 				215CAF511880F24600C1CC80 /* DevTrainingViewController.h */,
 				215CAF521880F24600C1CC80 /* DevTrainingViewController.m */,
@@ -278,6 +283,7 @@
 				215CAF401880F24600C1CC80 /* main.m in Sources */,
 				215CAF441880F24600C1CC80 /* DevTrainingAppDelegate.m in Sources */,
 				215CAF531880F24600C1CC80 /* DevTrainingViewController.m in Sources */,
+				83D9BB2C1881023F00C9E251 /* MyBMICalc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +474,7 @@
 				215CAF6D1880F24700C1CC80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		215CAF6E1880F24700C1CC80 /* Build configuration list for PBXNativeTarget "Prac10Tests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +483,7 @@
 				215CAF701880F24700C1CC80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

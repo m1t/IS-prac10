@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -49,7 +49,7 @@
                                     <action selector="calcAction:" destination="2" eventType="touchUpInside" id="k4g-q6-DyA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCQ-oP-ptH">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCQ-oP-ptH">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="AHQ-8f-9FK"/>
                                     <constraint firstAttribute="width" constant="204" id="Ggk-ol-PEl"/>
@@ -61,25 +61,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="VCQ-oP-ptH" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="0gs-ba-dmx"/>
+                            <constraint firstItem="UQr-jb-LLo" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="3Sc-5U-fvV"/>
                             <constraint firstAttribute="bottom" secondItem="VCQ-oP-ptH" secondAttribute="bottom" constant="157" id="4Cu-Nh-BLc"/>
                             <constraint firstItem="UQr-jb-LLo" firstAttribute="leading" secondItem="e7G-7x-aaB" secondAttribute="leading" type="default" id="53r-5g-oo7"/>
+                            <constraint firstItem="gAr-N4-mWa" firstAttribute="top" secondItem="3" secondAttribute="top" constant="83" id="Ak9-88-TqS"/>
                             <constraint firstItem="zdb-i1-NYt" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Oh8-9w-ZC2"/>
                             <constraint firstItem="3Cb-Fl-x9S" firstAttribute="centerX" secondItem="VCQ-oP-ptH" secondAttribute="centerX" type="default" id="PPX-Z1-hg7"/>
+                            <constraint firstItem="3Cb-Fl-x9S" firstAttribute="top" secondItem="3" secondAttribute="top" constant="153" id="TFh-Lb-ekq"/>
+                            <constraint firstItem="3Cb-Fl-x9S" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="UCx-rM-GOs"/>
                             <constraint firstItem="UQr-jb-LLo" firstAttribute="baseline" secondItem="zdb-i1-NYt" secondAttribute="baseline" type="default" id="W8s-eH-T1n"/>
+                            <constraint firstItem="e7G-7x-aaB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="79" id="cK9-vT-aBw"/>
                             <constraint firstItem="gAr-N4-mWa" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="dg7-gF-8bE"/>
                             <constraint firstItem="UQr-jb-LLo" firstAttribute="trailing" secondItem="e7G-7x-aaB" secondAttribute="trailing" type="default" id="irj-1K-YsA"/>
-                            <constraint firstItem="UQr-jb-LLo" firstAttribute="top" secondItem="3" secondAttribute="top" constant="82" id="k7j-Ps-7cj"/>
-                            <constraint firstItem="gAr-N4-mWa" firstAttribute="top" secondItem="3" secondAttribute="top" constant="145" id="nOl-19-9Bl"/>
-                            <constraint firstItem="3Cb-Fl-x9S" firstAttribute="top" secondItem="3" secondAttribute="top" constant="215" id="vYH-pe-jSS"/>
                             <constraint firstItem="UQr-jb-LLo" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="90" id="vsL-og-4Pk"/>
-                            <constraint firstItem="e7G-7x-aaB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="141" id="xzC-Nq-xTi"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="WeightTextField" destination="e7G-7x-aaB" id="nde-m2-XzW"/>
                         <outlet property="bmiLabel" destination="VCQ-oP-ptH" id="5lA-uJ-egX"/>
                         <outlet property="heightTextField" destination="UQr-jb-LLo" id="Mzx-P2-M78"/>
+                        <outlet property="weightTextField" destination="e7G-7x-aaB" id="grC-4A-a29"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -91,9 +91,9 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DevTrainingViewController.h"/>
             <relationships>
                 <relationship kind="action" name="calcAction:"/>
-                <relationship kind="outlet" name="WeightTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="bmiLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="heightTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="weightTextField" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
